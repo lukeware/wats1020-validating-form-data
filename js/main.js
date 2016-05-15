@@ -18,34 +18,34 @@ $(document).on('ready', function(){ // 1. Create a document ready handler.
             form.submit(); // If valid, submit form
         },
         rules: {
-            "your-name": {
+            "your-name": {    // requires name and limits character length
                 required: true,
                 maxlength: 128
             },
-            "your-state": {
+            "your-state": { // requires state 
                 required: true,
 //                 maxlength: 2
             },
-            "your-zip": {
-                required: true,
+            "your-zip": { // requires zip forces length and only accepts digits 
+                required: true, 
                 maxlength: 5,
                 digits: true
             },
-            "card-holder-name": {
+            "card-holder-name": { // requires cardholder name and max length
                 required: true,
                 maxlength: 128
             },
-            "card-number": {
+            "card-number": { // requires card number and is creditcard length only
                 required: true,
                 creditcard: true
             },
-            "expiry-month": {
+            "expiry-month": { // requires expiration month
                 required: true,
             },
-           "expiry-year": {
+           "expiry-year": { // requires expiration date
                 required: true,
             },
-            "cvv": {
+            "cvv": { // requires security code in 3 digits only
                 required: true,
                 maxlength: 3,
                 digits: true
