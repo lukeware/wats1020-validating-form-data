@@ -4,7 +4,9 @@
    Author's custom styles
    ========================================================================== */
 
-
+select.error, textarea.error, input.error, label.error {
+    color:#FF0000;
+}
 
 
 
